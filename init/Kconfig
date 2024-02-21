@@ -47,7 +47,7 @@ config AS_VERSION
 config LD_IS_BFD
 	def_bool $(success,test "$(ld-name)" = BFD)
 
-config LD_VERSION
+config LD_VERSION 
 	int
 	default $(ld-version) if LD_IS_BFD
 	default 0
